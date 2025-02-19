@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Copperplate, fantasy;
+  background-color: #bb64c24d;
+}
+
+.home-image {
+  display: block;
+  width: 50%;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+.mes {
+  border: 1px solid #000;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.img-fluid {
+  margin-top: 30px;
+}
+
+main h3 {
+  font-weight: normal;
+}
+
+.imagen {
+  width: 400px;
+  margin: 15px auto;
+  display: block;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+  margin: 0 10px;
+}
+
+ul {
+  list-style: none;
+}
+li {
+  list-style-type: square;
+}
