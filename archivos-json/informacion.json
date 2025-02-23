@@ -1,0 +1,12 @@
+{
+    "nombre": "Academia Odell",
+    "direccion": "Calle Avellaneda 565, Concepcion, Tucuman, Argentina",
+    "telefono": "3865308777",
+    "email": "academiaodell@gmail.com",
+    "inscripcion": "Inscripta en la CIAD - N. 1088 EDD",
+    "servicios": [
+      "Clases de danza clásica",
+      "Clases de danzas españolas",
+      "Preparación para exámenes y competencias"
+    ]
+  }
