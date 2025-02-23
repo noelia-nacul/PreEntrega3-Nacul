@@ -1,53 +1,70 @@
+@import 'variables';
+@import 'mixins';
+
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Copperplate, fantasy;
-    background-color: #bb64c24d;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-family;
+  background-color: $background-color;
+
+  // Anidamiento para .home-image dentro de body
   .home-image {
     display: block;
-    width: 50%;
-    margin: 20px auto;
-    border-radius: 10px;
+    width: $home-image-width;
+    @include margin($margin-top-20, auto);
+    @include border-radius($border-radius);
   }
-  
+
+  // Anidamiento para .mes dentro de body
   .mes {
-    border: 1px solid #000;
-    border-radius: 10px;
-    margin-top: 20px;
+    border: 1px solid $border-color;
+    @include border-radius($border-radius);
+    @include margin($margin-top-20);
   }
-  
+
+  // Anidamiento para .img-fluid dentro de body
   .img-fluid {
-    margin-top: 30px;
+    @include margin($margin-top-30);
   }
-  
-  main h3 {
-    font-weight: normal;
+
+  // Anidamiento para main y sus elementos
+  main {
+    h3 {
+      font-weight: normal;
+    }
   }
-  
+
+  // Anidamiento para .imagen dentro de body
   .imagen {
-    width: 400px;
-    margin: 15px auto;
+    width: $image-width;
+    @include margin($margin-15, auto);
     display: block;
   }
-  
+
+  // Anidamiento para ul y li dentro de body
   ul {
     list-style: none;
-    margin: 0;
+    @include margin(0, 0, 0, 0);
     padding: 0;
+
+    li {
+      display: inline;
+      @include margin(0, 10px);
+
+      // Anidamiento para pseudo-elementos
+      &:hover {
+        color: $primary-color; // Cambia el color al pasar el mouse
+      }
+    }
   }
-  
-  li {
-    display: inline;
-    margin: 0 10px;
-  }
-  
+
+  // Anidamiento para ul y li (segunda declaración)
   ul {
     list-style: none;
+
+    li {
+      list-style-type: square;
+    }
   }
-  li {
-    list-style-type: square;
-  }
-  
+}
